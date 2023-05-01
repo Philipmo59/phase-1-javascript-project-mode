@@ -1,0 +1,25 @@
+body{
+    background-color: #D5ECD4;
+}
+li{
+    margin: 10px;
+}
+
+#month-form{
+    display: inline-block;
+    color: black;
+    background-color: #9BC1BC;
+    text-align: center;
+    font-size: 20px;
+    margin-left:500px;
+
+}
+
+label{
+    margin: 10px;
+}
+
+table{
+    margin: auto;
+    padding: 10px;
+}

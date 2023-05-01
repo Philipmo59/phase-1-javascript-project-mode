@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer charset="utf-8"></script>
+    <link rel = "stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>US Holidays in 2020</h1>
+    <h3>Click on your favorite Holidays!</h3>
+    <select id="month-dropdown" name="select-breed">
+        <option value=""></option>
+        <option value="01">January</option>
+        <option value="02">February</option>
+        <option value="03">March</option>
+        <option value="04">April</option>
+        <option value="05">May</option>
+        <option value="06">June</option>
+        <option value="07">July</option>
+        <option value="08">August</option>
+        <option value="09">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+      </select>
+      <div class = "container">
+        <form id = "month-form">
+            <table>
+                <tr>
+                    <td><label for="Holiday">Holiday</label></td>
+                    <td><input type="text" id="Holiday"/></td>
+                </tr>
+                <tr>
+                    <td><label for="Date">Date (Year-Month-Day)</label></td>
+                    <td><input type="text" id="Date"/></td>
+                </tr>
+                <tr>
+                    <td><label for="Optional">Label if Optional or Public</label></td>
+                    <td><input type="text" id="Optional"/></td>
+                </tr>
+            </table>
+            <button type="submit" id="button">Submit</button>
+        </form>
+      </div>
+    
+</body>
+</html>
