@@ -8,13 +8,13 @@ document.addEventListener("DOMContentLoaded",fetch(url)
     .then(object => {
         console.log(object)
         const ul = document.createElement("ul")
-        for(let data of object){
-            console.log(data)
+        object.forEach(holiday =>{
+            console.log(holiday)
             const li = document.createElement("li")
-            li.innerText = `${data["date"]} ${data["localName"]} ${data["type"]}`
+            li.innerText = `${holiday["date"]} ${holiday["localName"]} ${holiday["type"]}`
             li.addEventListener("click",() => li.style.color = "blue")
             ul.appendChild(li)
-        }
+        })
         document.body.appendChild(ul)
     })
 )
