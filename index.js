@@ -6,10 +6,10 @@ document.querySelector("#month-form").addEventListener("submit",handleSubmit)
 document.addEventListener("DOMContentLoaded",fetch(url)
     .then(response => response.json())
     .then(object => {
-        console.log(object)
+        // console.log(object)
         const ul = document.createElement("ul")
         object.forEach(holiday =>{
-            console.log(holiday)
+            // console.log(holiday)
             const li = document.createElement("li")
             li.innerText = `${holiday["date"]} ${holiday["localName"]} ${holiday["type"]}`
             li.addEventListener("click",() => li.style.color = "blue")
@@ -24,7 +24,7 @@ dropDown.addEventListener("input",()=>{
     console.log(dropDownOuterValue)
     for(let date of document.getElementsByTagName("li")){
         let monthDate = date.innerText.slice(5,7)
-        console.log(monthDate)
+        // console.log(monthDate)
         if (monthDate != dropDownOuterValue){
             date.style.display = "none"
         }
@@ -52,3 +52,5 @@ function renderMonth(obj){
     document.querySelector("ul").appendChild(li)
     
 }
+
+
